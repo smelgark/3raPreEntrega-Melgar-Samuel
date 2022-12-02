@@ -1,0 +1,142 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Nunito Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: green;
+    cursor:pointer;
+}
+
+a:hover{
+    color: rgb(39, 131, 243);
+}
+
+
+header{
+    background-color: rgb(150, 247, 247);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+header div{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer{
+    background-color: rgb(150, 247, 247);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+h1{
+    color:rgb(61, 106, 106);
+}
+
+h2{
+    color:rgb(61, 106, 106);
+}
+
+
+body{
+    text-align: center;
+}
+
+section{
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.top-banner{
+    display: grid;
+    margin: 0%;
+    border-style: solid;
+    border-width: 5px 0px;
+}
+
+.carrusel{
+    width: 100%;
+}
+
+.gridMarcas{
+    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridMarcas li {
+    border-style:solid;
+    margin: 8%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(233, 235, 235);
+}
+
+.gridMarcas img{
+    width:100%;
+}
+
+.por-caracteristicas ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.por-caracteristicas ul li{
+    border-style:solid;
+    display: flex;
+}
+
+.por-caracteristicas img{
+    width: 60%;
+    align-self: center;
+}
+
+
+
+.info-empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 480px) {
+    .gridMarcas{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .por-caracteristicas ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*.form-contacto{
+
+    TRABAJO EN PROCESO
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}*/
