@@ -1,17 +1,91 @@
-h1 {
-  color: red;
-  font-size: 100px; }
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Nunito Sans', sans-serif;
+  list-style-type: none;
+  text-decoration: none; }
 
-header {
-  background-color: #96f7f7;
+button:hover {
+  background-color: #58FCEC;
+  cursor: pointer; }
+
+a:hover {
+  color: #58FCEC; }
+
+.header, footer {
+  background-color: #E8C547;
   width: 100%;
   display: flex;
   flex-direction: column; }
-  header div {
+  .header img, footer img {
+    max-width: 40px;
+    background-color: #58FCEC; }
+  .header div, footer div {
     display: flex;
     justify-content: space-around; }
-  header nav ul {
+  .header nav ul, footer nav ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row; }
+
+h1, h2 {
+  color: #58FCEC; }
+
+h3, h4 {
+  color: #5C80BC; }
+
+body {
+  text-align: center; }
+
+section {
+  /*margin: 0rem 0rem 0rem 0rem;*/
+  background-color: #5C80BC; }
+
+.top-banner {
+  display: grid;
+  margin: 0%;
+  border-style: solid;
+  border-width: 5px 0px; }
+
+.carrusel {
+  width: 100%; }
+
+.gridMarcas {
+  margin: 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.gridMarcas li {
+  border-style: solid;
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #e9ebeb; }
+
+.gridMarcas img {
+  width: 100%; }
+
+.por-caracteristicas ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .por-caracteristicas ul li {
+    border-style: solid;
+    display: flex; }
+
+.por-caracteristicas img {
+  width: 60%;
+  align-self: center; }
+
+.info-empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+@media screen and (max-width: 480px) {
+  .gridMarcas {
+    grid-template-columns: repeat(3, 1fr); }
+  .por-caracteristicas ul {
+    grid-template-columns: repeat(2, 1fr); } }
