@@ -33,7 +33,7 @@ h1, h2 {
   color: #58FCEC; }
 
 h3, h4 {
-  color: #5C80BC; }
+  color: #303A2B; }
 
 body {
   text-align: center; }
@@ -83,6 +83,10 @@ section {
 .info-empresa {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+
+.contactar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 @media screen and (max-width: 480px) {
   .gridMarcas {

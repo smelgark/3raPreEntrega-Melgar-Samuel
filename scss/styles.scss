@@ -1,5 +1,9 @@
 @import "colors.scss";
 
+@mixin regrid($columnas) {
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -50,7 +54,7 @@ h1, h2{
 }
 
 h3, h4{
-    color: $blueGray;
+    color: $kombuGreen;
 }
 
 
@@ -99,7 +103,7 @@ section{
 .por-caracteristicas{
     ul{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include regrid(4);
         li{
             border-style:solid;
             display: flex;
@@ -117,11 +121,16 @@ section{
     grid-template-columns: 1fr 1fr;
 }
 
+.contactar{
+    display: grid;
+    @include regrid(2);
+}
+
 @media screen and (max-width: 480px) {
     .gridMarcas{
-        grid-template-columns: repeat(3, 1fr);
+        @include regrid(3);
     }
     .por-caracteristicas ul{
-        grid-template-columns: repeat(2, 1fr);
+        @include regrid(2);
     }
 }
